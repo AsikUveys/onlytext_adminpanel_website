@@ -1,0 +1,77 @@
+
+body{
+    font-family:'Times New Roman', Times, serif;
+}
+
+/*-----  HEADER -----*/
+header{
+    padding-top:25px ;
+    display: flex;
+    justify-content: space-around;
+}
+
+#logo{
+    width: 100px;
+}
+
+
+/*-----  MAİN -----*/
+main{
+    height: auto;
+}
+
+#maincard{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    margin-top: 150px;
+}
+
+#arrow{
+    margin-top:35% ;
+    margin-left:49%;
+}
+
+hr{
+    border-color:white;
+    margin-top:40px;
+}
+
+#accordion{
+  width: 1200px;
+  margin:auto;
+  margin-top: 230px;
+}
+
+
+
+/*-----  FOOTER  -----*/
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px) rotate(5deg); }
+    50% { transform: translateX(5px) rotate(-5deg); }
+    75% { transform: translateX(-5px) rotate(5deg); }
+    100% { transform: translateX(0); }
+  }
+
+  /* Sallanma animasyonunu sadece simge üzerine gelindiğinde uygulayın */
+  .fa-shake {
+    animation: none; /* Varsayılan olarak animasyonu iptal edin */
+    
+  }
+
+  .fa-shake:hover {
+    animation: shake 0.5s infinite; /* Sadece hoverda animasyonu etkinleştirin */
+    filter: invert(51%) sepia(46%) saturate(1505%) hue-rotate(53deg) brightness(97%) contrast(102%);
+  }
+
+  .fa-shake:active {
+    filter: invert(63%) sepia(88%) saturate(1385%) hue-rotate(46deg) brightness(96%) contrast(101%);
+  }
+
+  #sosyal {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Sosyal medya simgeleri arasındaki boşluğu ayarlamak için */
+    margin-bottom:8px;
+  }
